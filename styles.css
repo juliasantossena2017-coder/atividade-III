@@ -1,0 +1,133 @@
+:root {
+  --rosa: #f78fb3;
+  --verde: #6fcf97;
+  --azul: #56ccf2;
+  --dourado: #f9ca24;
+  --branco: #fff;
+  --cinza: #f4f4f4;
+  --preto: #333;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  background: linear-gradient(135deg, var(--azul), var(--rosa), var(--dourado));
+  color: var(--preto);
+  scroll-behavior: smooth;
+}
+
+/* Cabeçalho */
+header {
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 25px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: var(--rosa);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--preto);
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: var(--rosa);
+}
+
+.menu-toggle {
+  display: none;
+  background: var(--rosa);
+  border: none;
+  color: white;
+  font-size: 1.5em;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+/* Seções */
+.hero {
+  background: linear-gradient(135deg, var(--verde), var(--azul));
+  color: var(--branco);
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.btn {
+  display: inline-block;
+  background: var(--rosa);
+  color: white;
+  padding: 12px 25px;
+  border-radius: 30px;
+  margin-top: 15px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.btn:hover {
+  background: var(--dourado);
+  transform: scale(1.05);
+}
+
+.content {
+  background: var(--branco);
+  margin: 40px auto;
+  padding: 40px;
+  width: 90%;
+  max-width: 1000px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+h2 {
+  text-align: center;
+  color: var(--rosa);
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.card {
+  background: var(--cinza);
+  padding: 20px;
+  border-radius: 12px;
+  flex: 1 1 250px;
+  transition: transform 0.3s;
+}
+.card:hover {
+  transform: translateY(-6px);
+  background: var(--dourado);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+  margin: auto;
+}
+inp
